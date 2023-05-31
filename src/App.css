@@ -1,0 +1,33 @@
+.routes{
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  
+}
+.side{
+  flex:1;
+}
+.right
+{
+  flex: 10;
+}
+.App{
+  background: url("../components/home-background.png") center center / cover no-repeat fixed;
+  width: 100vw;
+}
+@media  screen and (max-width:640px) {
+.App{
+  width: 160vw;
+}
+
+.routes{
+  flex-direction: column;
+  align-items: center;
+}
+.side{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+}

@@ -1,0 +1,27 @@
+.react-select__menu-list{
+    background-color: black;
+}
+.genere{
+    height: auto;
+}
+.css-art2ul-ValueContainer2{
+    background: rgba(33, 33, 72, 0.123);
+    border-radius: 16px;   
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 1px;
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@media screen and (max-width:640px) {
+    .msg{
+        height: 118vh;
+    }
+}

@@ -1,0 +1,273 @@
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.movie__intro {
+    width: 85%;
+}
+
+.movie__backdrop {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: 0 35%;
+    opacity: 0.5;
+}
+
+.movie__detail {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 277px;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__poster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.movie__detailRightTop>div {
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie__voteCount {
+    margin-left: 1rem;
+}
+
+.movie__genres {
+    margin: 1.25rem 0;
+}
+
+.movie__genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+
+.movie__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.synopsisText>div:last-of-type {
+    margin-left: auto;
+}
+
+.movie__links {
+    position: relative;
+    bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.movie__heading {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.movie__Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.movie__homeButton {
+    background: rgba(33, 33, 72, 0.123);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    border: 0.5px solid white;
+}
+
+.movie__imdbButton {
+    background: rgba(33, 33, 72, 0.123);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    border: 0.5px solid white;
+}
+
+.newTab {
+    margin-left: 1.4rem;
+}
+
+.movie__production {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+
+.movie__productionComapany {
+    width: 200px;
+    margin: 2rem;
+}
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.episode,
+.seasons {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.sep {
+    margin: 20px 0;
+    position: relative;
+    bottom: 50px;
+    text-align: left;
+}
+
+.recomendation {
+    width: 75%;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie_reco {
+    width: 85vw;
+    overflow-x: scroll;
+    height: 400px;
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 5px 30px;
+}
+.auther{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.avatars{
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.avatars img{
+    height: 100%;
+    width: 100%;
+    
+}
+.aa{
+    display: flex;
+    align-items: center;
+}
+.revv{
+    border-bottom:1px solid rgba(255, 255, 255, 0.549);
+    width: 75%;
+    margin-bottom: 10px;
+}
+.review a:hover{
+    cursor: pointer;
+}
+.cardd img{
+    height: 200px;
+    margin: 0 5px;
+}
+.cardd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cast{
+    flex-direction: column;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+.card-cont
+{
+    width: 85vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 280px;
+    white-space:nowrap;
+    display: flex;
+}
+.cardd p{
+    margin: 1px 1px ;
+}
+@media screen and (max-width:640px) {
+    .movie__detail {
+        flex-direction: column;
+        bottom: 100px;
+    }
+
+    .movie__backdrop {
+        height: 300px;
+    }
+
+    .movie__links {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-cont{
+        width: 148vw;
+    }
+    .movie_reco{
+        width: 150vw;
+    }
+}

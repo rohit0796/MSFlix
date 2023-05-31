@@ -1,0 +1,78 @@
+.poster{
+
+margin: 20px;
+}
+.posterimages{
+    height: 600px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.posterimages > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.posterimage_overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterimage_overlay:hover {
+    opacity: 1;
+}
+
+.posterimage_title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterimage__runtime {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterimage_rating {
+    margin-left: 3rem;
+}
+
+.posterimage_description {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+@media screen and (max-width:640px) {
+    .posterimage_description{
+        display: none;
+    }
+    /* .posterimage_overlay
+    {
+        bottom: 288px;;
+    } */
+    .posterimages{
+        height:260px
+    }
+    .posterimage_title
+    {
+        font-size: 2rem;
+
+    }
+}
